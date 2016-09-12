@@ -1,0 +1,15 @@
+{
+  "name": "electron-danmu-player",
+  "version": "0.0.1",
+  "description": "An application for playing media with dan mu",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Mystic",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {}
+}
