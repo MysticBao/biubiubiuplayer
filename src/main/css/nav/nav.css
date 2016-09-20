@@ -1,10 +1,10 @@
 .nav{
   width: 300px;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;;
   color: black;
   border-right: 1px solid grey;
-
+  height: 100%;
 }
 
 .nav-header {
