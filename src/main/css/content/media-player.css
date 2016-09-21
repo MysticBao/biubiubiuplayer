@@ -1,0 +1,14 @@
+.media-player {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  visibility: visible;
+  height: 100%;
+  margin: 0px;
+}
+
+.media-player-view{
+  height: 100%;
+  margin:0px;
+  width: 100%;
+}

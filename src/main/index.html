@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
   <title>Hentai DanMu Player</title>
@@ -6,15 +6,24 @@
   <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./css/nav/nav.css">
   <link rel="stylesheet" type="text/css" href="./css/variables.css">
+  <link rel="stylesheet" type="text/css" href="./css/content/media-player.css">
   <script src="./js/semantic.min.js"></script>
 </head>
 <body>
-<nav class="nav">
+<div class="nav">
 <header class="nav-header">
-<h2 class="nav-title">弹幕引入(av号or本地)</h2>
+<h3 class="nav-title">弹幕引入(av号or本地)</h3>
 </header>
-</nav>
+<div class="nav-item">
+  <div id="av" class="ui action input">
+    <input type="text" placeholder="AV号...">
+    <button class="ui button">查找</button>
+  </div>
+</div>
 
+</div>
+<div class="media-player" >
+<video class="media-player-view" controls="controls"></video>
 </div>
 </body>
 </html>

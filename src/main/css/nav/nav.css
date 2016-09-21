@@ -1,10 +1,11 @@
 .nav{
-  width: 300px;
+  width: 280px;
   overflow-x: hidden;
   overflow-y: scroll;;
   color: black;
   border-right: 1px solid grey;
   height: 100%;
+  float: left;
 }
 
 .nav-header {
@@ -18,4 +19,13 @@
   font-weight: 300;
   line-height: 1;
   margin: 0;
+}
+
+.nav-item {
+  padding-left: 15px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
 }
