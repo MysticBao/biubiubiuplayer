@@ -1,7 +1,7 @@
 .nav{
   width: 280px;
   overflow-x: hidden;
-  overflow-y: scroll;;
+  overflow-y: auto;;
   color: black;
   border-right: 1px solid grey;
   height: 100%;
