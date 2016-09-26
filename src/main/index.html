@@ -19,11 +19,28 @@
     <input type="text" placeholder="AV号...">
     <button class="ui button">查找</button>
   </div>
+  <div id="Import-vido" class="ui action input">
+	<button class="ui button">Import</button>
+  </div>
 </div>
 
 </div>
 <div class="media-player" >
-<video class="media-player-view" controls="controls"></video>
+<video id='vido-player' class="media-player-view" controls="controls" src=''></video>
 </div>
 </body>
+<script>
+	//click import and send main ipc event
+    const {ipcRenderer} = require('electron');
+	var importButton = document.getElementById('Import-vido');
+	importButton.addEventListener('click', function(){
+		ipcRenderer.send('popup-open-file-dialog');
+	});
+
+	//get file path and change the src path
+	ipcRenderer.on('set-vido-src', (event, path) => {
+		console.log('open file path: ' + path);
+		document.getElementById('vido-player').setAttribute('src', path);
+	});
+</script>
 </html>
