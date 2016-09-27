@@ -15,13 +15,14 @@
 <h3 class="nav-title">弹幕引入(av号or本地)</h3>
 </header>
 <div class="nav-item">
-  <div id="av" class="ui action input">
-    <input type="text" placeholder="AV号...">
+  <div class="ui action input">
+    <input id="avNumber" type="text" placeholder="AV号...">
     <button class="ui button">查找</button>
   </div>
-  <div id="Import-vido" class="ui action input">
-	<button class="ui button">Import</button>
-  </div>
+</div>
+
+<div id="Import-vido" class="nav-item">
+  <button id＝"importLocalButton" class="ui primary basic button">Secondary</button>
 </div>
 
 </div>
@@ -31,7 +32,7 @@
 </body>
 <script>
 	//click import and send main ipc event
-    const {ipcRenderer} = require('electron');
+  const {ipcRenderer} = require('electron');
 	var importButton = document.getElementById('Import-vido');
 	importButton.addEventListener('click', function(){
 		ipcRenderer.send('popup-open-file-dialog');

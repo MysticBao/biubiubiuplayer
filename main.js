@@ -17,9 +17,9 @@ function createWindow(){
 
 app.on('ready', ()=>{
   createWindow()
-  mainWindow.openDevTools();
+  //mainWindow.openDevTools();
 
-  //add ipc to open file and pass the file path to render ipc 
+  //add ipc to open file and pass the file path to render ipc
   ipcMain.on('popup-open-file-dialog', (event) => {
   	var file = dialog.showOpenDialog({properties:['openFile']});
 	console.log('select file: ' + file);

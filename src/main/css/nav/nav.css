@@ -27,5 +27,9 @@
   margin-top: 1rem;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+}
+
+.button.ui.primary.basic.button{
+  width:247px;
 }
