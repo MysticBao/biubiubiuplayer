@@ -7,7 +7,7 @@ const {dialog} = require('electron')
 let mainWindow
 
 function createWindow(){
-  mainWindow = new BrowserWindow({width: 800,height: 600})
+  mainWindow = new BrowserWindow({width: 800,height: 500})
   mainWindow.loadURL(`file://${__dirname}/src/main/index.html`)
 
   mainWindow.on('closed',function(){

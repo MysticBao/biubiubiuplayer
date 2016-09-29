@@ -5,6 +5,7 @@
   border-right: 1px solid grey;
   height: 100%;
   float: left;
+  display: flex;
 }
 
 .nav-header {
@@ -30,12 +31,15 @@
 }
 
 .button.ui.primary.basic.button{
-  width:247px;
+  width:200px;
+  font-size: 0.8rem;
 }
 
-.nav {
-  display: flex;
+.ui.action.input input{
+  width: 130px;
+  font-size: 0.8rem;
 }
+
 .nav .nav-toggle-bar{
   display: flex;
   align-items: center;
