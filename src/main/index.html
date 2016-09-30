@@ -20,7 +20,7 @@
         <button class="ui button">查找</button>
       </div>
     </div>
-    <div id="import-vido" class="nav-item">
+    <div id="import-video" class="nav-item">
       <button id＝"importLocalButton" class="ui primary basic button">导入本地字</button>
     </div>
 
@@ -59,7 +59,7 @@
 	//get file path and change the src path
 	ipcRenderer.on('set-vido-src', (event, path) => {
 		console.log('open file path: ' + path);
-		document.getElementById('vido-player').setAttribute('src', path);
+		document.getElementById('video-player').setAttribute('src', path);
 	});
 </script>
 </html>

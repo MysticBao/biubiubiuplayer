@@ -1,8 +1,8 @@
 const electron = require('electron')
 const BrowserWindow = electron.BrowserWindow
 const app = electron.app
-const {ipcMain} = require('electron')
-const {dialog} = require('electron')
+const ipcMain = electron.ipcMain
+const dialog = electron.dialog
 
 let mainWindow
 
