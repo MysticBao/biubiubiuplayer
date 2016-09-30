@@ -20,7 +20,7 @@
         <button class="ui button">查找</button>
       </div>
     </div>
-    <div id="Import-vido" class="nav-item">
+    <div id="import-vido" class="nav-item">
       <button id＝"importLocalButton" class="ui primary basic button">导入本地字</button>
     </div>
 
@@ -36,7 +36,7 @@
 
 </div>
 <div class="media-player" >
-<video id='vido-player' class="media-player-view" controls="controls" src=''></video>
+<video id='video-player' class="media-player-view" controls="controls" src=''></video>
 </div>
 </body>
 <!--Not work in electron -->
@@ -51,7 +51,7 @@
 <script>
 	//click import and send main ipc event
   const {ipcRenderer} = require('electron');
-	var importButton = document.getElementById('Import-vido');
+	var importButton = document.getElementById('import-video');
 	importButton.addEventListener('click', function(){
 		ipcRenderer.send('popup-open-file-dialog');
 	});
